@@ -1,0 +1,14 @@
+machine: SHEPHERD-M1
+version: 1.0.0
+
+temporal_horizons:
+  - 3
+  - 7
+  - 23
+
+primary_metric:
+  name: brier_score
+  comparison: shepherd_vs_raw_state
+
+freeze:
+  hash: sha256

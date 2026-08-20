@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SHEPHERD Agent Hazard Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "agent_id",
+    "hazard_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "hazard_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "error_pressure": {
+      "type": "number"
+    },
+    "recovery_deficit": {
+      "type": "number"
+    },
+    "progress_stall": {
+      "type": "number"
+    },
+    "trajectory_contradiction": {
+      "type": "number"
+    },
+    "error_recurrence": {
+      "type": "number"
+    }
+  }
+}
